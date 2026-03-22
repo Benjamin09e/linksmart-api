@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 // 2. Middlewares
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // 3. Import des routes
